@@ -525,8 +525,12 @@ a.item:focus .icon-smartphone {
 
 /* footer */
 
-.footer {
+.backgrounnd-color {
     background-color: #2F303A;
+}
+
+.footer {
+    
 
     display: flex;
     flex-direction: column;
@@ -621,6 +625,64 @@ a.item:focus .icon-smartphone {
     margin-left: 10px;
 }
 
+/* subscribe */
+
+.subscribe {
+    margin-left: 93px;
+}
+
+.subscribe input {
+    width: 358px;
+    height: 50px;
+
+    background: #2F303A;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+.subscribe b {
+     display: block;
+     margin-bottom: 20px;
+
+     color: #fff;
+
+     font-size: 14px;
+     line-height: 1.14;
+     text-transform: uppercase;
+}
+
+ .submit-telegram {
+     position: relative;
+    border: 1px;
+    margin-left: 12px;
+    padding: 10px 62px 10px 29px;
+    width: 200px;
+    height: 50px;
+ 
+    color: #fff;
+    background-color: var(--accent-color);
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.logo-telegram {
+    position: absolute;
+
+    top: 13px;
+    right: 28px;
+    fill: #fff;
+}
 /* portfolio */
 
 .main {
@@ -778,7 +840,7 @@ img {
    }
 
 
-   .backdrop {
+    .backdrop {
        position: fixed;
        top: 0;
        left: 0;
@@ -806,8 +868,6 @@ img {
         top: 50%;
         left: 50%;
         
-
-        padding: 15px;
         min-width: 528px;
         min-height: 581px;
 
@@ -844,4 +904,163 @@ img {
 
    .modal-close {
        fill: #000;
+   }
+
+  form.conteiner-modal .form-field {
+       display: flex;
+       flex-direction: column;
+   }
+
+   form.conteiner-modal {
+       padding-top: 40px;
+       padding-bottom: 40px;
+   }
+
+   .forma {
+       padding-left: 41px;
+       padding-right: 39px;
+   }
+
+   .conteiner-modal h2 {
+    margin-top:0;
+    margin-bottom: 12px;
+ 
+
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+
+    color: var(--title-text-color);
+   }
+
+   .form-field input {
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        box-sizing: border-box;
+        border-radius: 4px;
+
+        height: 40px;
+        padding-left: 41px;
+        margin-bottom: 10px;
+
+        cursor: pointer;
+   }
+
+    .form-field {
+        position: relative;
+   }
+
+   .logo-svg {
+       position: absolute;
+       left: 12px;
+       top: 28px;
+   }
+  
+   .form-field:hover input {
+       border-color: var(--accent-color);
+   }
+   
+
+   .form-field:hover .logo-svg,
+   .form-field:focus .logo-svg  {
+       fill: var(--accent-color);
+   }
+
+   .conteiner-modal label {
+        margin-bottom: 4px;
+
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.01em;
+    
+        color: #757575;
+   }
+
+   .conteiner-modal textarea {
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        box-sizing: border-box;
+        border-radius: 4px;
+        height: 120px;
+        resize: none ;
+        padding: 12px 16px;
+        margin-bottom: 20px;
+   }
+
+   .conteiner-modal ::placeholder {
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+    
+       color: rgba(117, 117, 117, 0.5);
+   }
+
+   .contract {
+       display: flex;
+       align-items: center;
+       padding-left: 54px;
+       padding-right: 51px;
+       margin-bottom: 30px;
+       height: 24px;
+   }
+   
+
+   .contract label {
+        margin: 0;
+        margin-left: 7px;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: var(--primery-text-color);
+   }
+
+
+   .icons {
+       display: inline-flex;
+       width: 16px;
+       height: 15px;
+       border-radius: 2px;
+       border: 2px solid var(--title-text-color);
+
+       background-size: contain;
+       background-origin: border-box;
+   }
+
+    .contract input {
+        margin: 0;
+   }
+
+    .checkbox:checked + .icons {
+        background-color: var(--accent-color);
+        border-color: var(--accent-color);
+        background-size: contain;
+       background-origin: border-box;
+    }
+
+
+    .checkbox {
+        /* -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none; */
+       
+    }
+   .conteiner-modal [type="submit"] {
+        display: block;
+        width: 200px;
+        height: 50px;
+
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px 55px;
+        border: 0px;
+
+        color: #fff;
+        background-color: var(--accent-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+   }
+    
+   .conteiner-modal button[type="submit"]:hover,
+   .conteiner-modal button[type="submit"]:focus {
+        background: #188CE8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
    }
