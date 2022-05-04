@@ -319,8 +319,8 @@
 
     </main>
     <footer>
-      <div class="footer">
-        <div class="container">
+      <div class="backgrounnd-color">
+        <div class="container footer">
           <div class="footer-wrapper">
             <div>
               <a href="Web-Studio" class="logo"><span>Web</span><span class="studio">Studio</span></a>
@@ -363,14 +363,28 @@
                   </li>
                 </ul>
               </div>
+              <div class="subscribe">
+                <b>Подпишитесь на рассылку</b>
+                <form>
+                  <label class="mail">
+                    <input type="email" name="E-mail" placeholder="E-mail">               
+                  </label>
+                  <button class="submit-telegram" type="submit">Подписаться
+                    <svg class="logo-telegram" width="24px" height="24px">
+                      <use href="./images/symbol-defs.svg#telegram"></use>
+                    </svg>
+                  </button>
+                </form>
+              </div>
           </div>
-        </div>      
+        </div>
       </div>
-     </footer>
+       
+   </footer>
      
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-          <button class="close" data-modal-close>
+          <button class="button-close" data-modal-close>
             <svg class="modal-close" width="18px" height="18px">
               <use href="./images/symbol-defs.svg#close-black"></use>
             </svg>
@@ -396,7 +410,7 @@
                   <label for="email">Почта</label>
                   <input type="email" id="email" name="email">
                   <svg class="logo-svg" width="18px" height="18px">
-                    <use href="./images/symbol-defs.svg#email-black"></use>
+                    <use href="./images/black-defs.svg#email-black"></use>
                   </svg>
                 </div>
                 <div class="form-field">
@@ -405,15 +419,17 @@
                 </div>
                </div>
               <div class="contract">
-                <input class="checkbox" type="checkbox" name="checkbox">
-                <span class="icons">
-                  <svg class="qqq" width="16px" height="15px">
-                    <use href="./images/black-defs.svg#icon-check"></use>
-                  </svg>
-                </span>
-                <label for="checkbox">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                  <label> 
+                  <input class="checkbox" type="checkbox" name="checkbox">
+                  <span class="icons">
+                    <svg class="check" width="16px" height="15px">
+                      <use href="./images/black-defs.svg#icon-check"></use>
+                    </svg>
+                  </span>
+                  Соглашаюсь с рассылкой и принимаю
+                  <a href="#"> Условия договора</a>
+                </label>
               </div>
-             
             <button type="submit">Отправить</button>
           </form>
         </div>
