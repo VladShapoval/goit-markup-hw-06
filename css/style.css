@@ -26,13 +26,13 @@ body {
     margin: 0 auto;
 }
 
-/* headre-flex */
+/* headre */
 
 .border {
     border-bottom: 1px solid #ECECEC;
 }
 
-.header-flex {
+.header {
     display: flex;
     align-items: center;
    
@@ -40,7 +40,7 @@ body {
 
 /* logo */
 
- .header-flex > a.logo {
+ .header > a.logo {
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -59,13 +59,9 @@ body {
 .logo > span {
     color: var(--accent-color);
 }
-/* nav */
-
-.navi {
-    margin-left: 93px;
-}
 
 /* site-nav */
+
 
 .site-nav a {
     position: relative;
@@ -103,6 +99,7 @@ body {
 
 .site-nav {
     display: flex;
+    margin-left: 93px;
 }
 
 .site-nav .item + .item {
